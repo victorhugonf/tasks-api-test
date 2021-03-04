@@ -75,9 +75,9 @@ public class APITest {
         RestAssured
                 .given()
                 .when()
-                .delete(String.format("/todo/%s", id))
+                    .delete(String.format("/todo/%s", id))
                 .then().log().all()
-                .statusCode(204);
+                    .statusCode(204);
     }
 
 }
